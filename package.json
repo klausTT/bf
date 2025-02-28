@@ -1,0 +1,22 @@
+{
+  "name": "bf",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run --watch index.ts",
+    "build": "tsup index.ts -d ./ --format esm --minify --treeshake"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@fastify/redis": "^7.0.2",
+    "fastify": "^5.2.1",
+    "fastify-cli": "^7.3.0",
+    "ioredis": "^5.5.0",
+    "tsup": "^8.3.6"
+  }
+}
